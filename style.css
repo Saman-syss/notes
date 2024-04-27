@@ -1,0 +1,322 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+body{
+  min-height: 100vh;
+  
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+nav{
+  background-color: white;
+  box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.1);
+}
+nav ul{
+  width: 100%;
+  list-style: none;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+nav li{
+  height: 50px;
+}
+.logo{
+  width: 80%;
+}
+nav a{
+  height: 100%;
+  padding: 0 30px;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  color: black;
+}
+nav a:hover{
+  background-color: #f0f0f0;
+}
+nav li:first-child{
+  margin-right: auto;
+}
+.sidebar{
+  position: fixed;
+  top: 0; 
+  right: 0;
+  height: 100vh;
+  width: 250px;
+  background-color: rgba(255, 255, 255, 0.603);
+  backdrop-filter: blur(12px);
+  box-shadow: -10px 0 10px rgba(0, 0, 0, 0.1);
+  list-style: none;
+  display: none;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  z-index: 999;
+}
+.sidebar li{
+  width: 100%;
+}
+.sidebar a{
+  width: 100%;
+}
+.menu-button{
+  display: none;
+}
+@media(max-width: 800px){
+  .hideOnMobile{
+    display: none;
+  }
+  .menu-button{
+    display: block;
+  }
+  
+}
+@media(max-width: 400px){
+  .sidebar{
+    width: 100%;
+  }
+}
+
+/* ----------------------------- slideshoiw ------------------------------*/
+
+.slideshow-container {
+  max-width: 500px;
+  position: relative;
+  margin: auto;
+  
+}
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+/* - -----------------  notes ------------------*/
+
+.bottm{
+  padding: 20px;
+   
+   
+}
+.bottm h2{
+   color: #053c86;
+   margin-left: 10px;
+   
+}
+.maingrid{
+   font-size: 50px;
+   display: grid;
+   padding :3px;
+   max-width: 80%;
+   margin-bottom: 30px;
+
+}
+.gridb{
+
+   margin-top: 15px;
+   padding: 10px;
+   border: 1px solid black;
+   border-radius: 10px;
+   
+}
+.gridb a{
+   text-decoration:none ;
+   
+   font-size: 25px;
+}
+
+
+.gridb p{
+   font-size: 25px;
+   color: #053c86 ;
+   transition: 0.5s;
+}
+.gridb :hover{
+   text-decoration: underline;
+
+   
+}
+.maingrid :hover{
+   box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+   background-color: #f5f8ff;
+}
+
+/*----------------footer--------------------*/
+
+
+.footer{
+  width: 100%;
+  position: relative;
+  bottom: 0;
+  background: linear-gradient(to right,#00093c, #172554);
+  color: #fff;
+  padding: 100px 0 30px;
+  border-top-left-radius: 125px;
+  font-size: 13px;
+  line-height: 20px;
+}
+.footer p{
+  color: #fff;
+  font-size: 13px;
+  font-weight: normal;
+  line-height: 20px;
+  padding: 0;
+}
+.frow{
+  width: 85%;
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+.fcol{
+  flex-basis: 25%;
+  padding: 10px;
+}
+.footer img{
+  width: 80px;
+  margin-bottom: 30px;
+}
+.fcol h3{
+  width: fit-content;
+  margin-bottom: 40px;
+  position: 40px;
+  position: relative;
+}
+.email{
+  width: fit-content;
+  border-bottom: 1px solid #ccc;
+  margin: 20px;
+  margin-left: 0;
+}
+.footer ul li{
+  list-style: none;
+  margin-bottom: 12px;
+}
+.footer ul li a{
+  text-decoration: none;
+  color: white;
+}
+.footer a{
+  text-decoration: underline;
+  color: white;
+}
+.footer a:hover{
+  color: red;
+}
+
+
+/*------------ profie card*/
+
+.card {
+  padding-top: 100px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  max-width: 300px;
+  margin: auto;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.title {
+  color: grey;
+  font-size: 18px;
+}
+
+button {
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 8px;
+  color: white;
+  background-color: #000;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+  font-size: 18px;
+}
+
+a {
+  text-decoration: none;
+  font-size: 22px;
+  color: black;
+}
+
+button:hover, a:hover {
+  opacity: 0.7;
+}
