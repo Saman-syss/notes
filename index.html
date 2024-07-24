@@ -5,7 +5,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Notes-site</title>
   <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="nav.css">
   <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <script src="https://kit.fontawesome.com/b95d45d6bd.js" crossorigin="anonymous"></script>
 </head>
 <body>
   <!-- --------------------- nav -->
@@ -13,21 +15,24 @@
     <ul class="sidebar">
       <li onclick=hideSidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="26" viewBox="0 96 960 960" width="26"><path d="m249 849-42-42 231-231-231-231 42-42 231 231 231-231 42 42-231 231 231 231-42 42-231-231-231 231Z"/></svg></a></li>
       <li><a href="index.html">Home</a></li>
-      <li><a href="Notes.html">Notes</a></li>
-      <li><a href="#">Pdf's</a></li>
-      <li><a href="#">Sets</a></li>
-      <li><a href="more.html">More</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="main.html">Resource</a></li>
+      <li><a href="newss.html">Updates</a></li>
+      <li><a href="#Contact-section">Contact</a></li>
     </ul>
     <ul>
-      <li class="logo"><a href="#"><img src="Logo (2).png" width="100px" alt="Notes"></a></li>
-      <li class="hideOnMobile"><a href="note1.html">Home</a></li>
-      <li class="hideOnMobile"><a href="Notes.html">Notes</a></li>
-      <li class="hideOnMobile"><a href="#">Pdf's</a></li>
-      <li class="hideOnMobile"><a href="#">Sets</a></li>
-      <li class="hideOnMobile"><a href="more.html">More</a></li>
+     
+      <li class="hideOnMobile" id="nav1"><a href="index.html">Home</a></li>
+      <li class="hideOnMobile"><a href="about.html">About</a></li>
+      <li class="hideOnMobile"><a href="main.html">Resource</a></li>
+      <li class="hideOnMobile"><a href="newss.html">Updates</a></li>
+      <li class="hideOnMobile" id="nav5"><a href="#Contact-section">Contact</a></li>
       <li class="menu-button" onclick=showSidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="26" viewBox="0 96 960 960" width="26"><path d="M120 816v-60h720v60H120Zm0-210v-60h720v60H120Zm0-210v-60h720v60H120Z"/></svg></a></li>
     </ul>
   </nav>
+  
+
+
   <!--- ------------------------------   hero slider        --------------------------- -->
   <!-- Slideshow container -->
     <div class="slideshow-container">
@@ -108,19 +113,51 @@
       
     </div>
   </div>
-
-
-<div class="w3-container">
-   
-  
-    <div class="w3-panel w3-leftbar w3-light-grey">
-      <p class="w3-xlarge w3-serif"><i>"So many books, so little time.”</i></p>
-      <p>― Frank Zappa</p>
-    </div>
-  </div>
-
-
 </div>
+<!-- ----------------------------- COntact form -------------- -->
+
+<section class="contact" id="Contact-section">
+       
+    
+  <div class="cont-body">
+
+
+
+ 
+  
+    <h1>Contact Us</h1>
+<div style="display: flex; gap: 5vw; ">
+
+    <img src="https://nijanadhikari.com.np/static/media/contact-form.b46f9ea2967a8567fb48601a1e2dbdf2.svg" id="form-img" alt="error" style=" height: 50vh; width: 40%; padding-top: 4vh;">
+
+
+    <form action="">
+
+
+    <input  placeholder="Your Name" style="border: none; border-bottom: 1px solid black;" type="text">
+    <input placeholder="Your Email" style="border: none; border-bottom: 1px solid black;" type="text">
+    <input placeholder="Title" style="border: none; border-bottom: 1px solid black;"type="text">
+    <input placeholder="Your Message" style="padding-bottom: 10vh; border: none; border-bottom: 1px solid black;" type="text">
+    <a href="#" class="btn po">EXPLORE NOW</a>
+   
+    </form>
+
+    
+</div>
+   <h4 id="follow">Follow us:</h4>
+   <div class="icons">
+    
+    <a href="https://www.facebook.com/devdahaschool"><i class="fa-brands fa-facebook"></i></a>
+    <a href="instagram.com"><i class="fa-brands fa-instagram"></i></a>
+    <a href="x.com"><i class="fa-brands fa-x-twitter"></i></a>
+    <a href="mailto:schooldevdaha@gmail.com"><i class="fa-regular fa-envelope"></i></a>
+    <a href="tel:071-577407"><i class="fa-solid fa-phone"></i></a>
+   </div>
+
+  </div>
+</section>
+
+
 <!------  footer  ----->
 <section class="footer">
 

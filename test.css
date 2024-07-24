@@ -1,0 +1,70 @@
+.contact {
+    display: flex;
+    flex-direction: column; /* Display as column for smaller screens */
+    align-items: center; /* Center items horizontally */
+    padding: 20px; /* Padding for better spacing */
+  }
+  
+  .cont-form-img {
+    width: 100%; /* Make image responsive */
+    max-width: 400px; /* Limit maximum width */
+    height: auto; /* Maintain aspect ratio */
+    margin-bottom: 20px; /* Add space below image */
+  }
+  
+  .cont-body {
+    background: white;
+    width: 90%; /* Adjust width for responsiveness */
+    max-width: 800px; /* Limit maximum width */
+    padding: 20px;
+    margin: auto;
+    margin-top: 20px; /* Add top margin */
+    margin-bottom: 20px; /* Add bottom margin */
+  }
+  
+  .contact h1 {
+    text-align: center;
+    padding-top: 20px; /* Add padding */
+  }
+  
+  .contact form {
+    width: 100%; /* Make form width 100% */
+  }
+  
+  .icons {
+    text-align: center;
+    margin-top: 20px;
+  }
+  
+  .icons a {
+    color: black;
+    margin: 0 10px; /* Add space between icons */
+  }
+  
+  .btn {
+    display: inline-block;
+    text-decoration: none;
+    color: #fff;
+    border: 1px solid black;
+    padding: 10px 30px;
+    font-size: 14px;
+    background: transparent;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s, border-color 0.3s; /* Smooth transitions */
+  }
+  
+  .btn:hover {
+    background-color: #172554;
+    border-color: #172554;
+  }
+  
+  .po {
+    border-color: #f44336;
+    background: transparent;
+    color: #f44336;
+  }
+  
+  .po:hover {
+    background-color: #f44336;
+    color: #fff;
+  }

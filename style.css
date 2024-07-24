@@ -1,77 +1,28 @@
-*{
-  margin: 0;
-  padding: 0;
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@font-face {
+    font-family: 'Libre Baskerville';
+    src: url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap') format('woff2'),
+        
+    /* You can specify additional font properties here, such as font-weight and font-style */
+  }
+
+
+/* index page */
+  
+* {
+    margin: 0;
+    padding: 0;
 }
+
 body{
-  min-height: 100vh;
-  
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #F8F8F8;
+    min-height: 100vh;
 }
-nav{
-  background-color: white;
-  box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.1);
+h1{
+    font-family:'Libre Baskerville';
 }
-nav ul{
-  width: 100%;
-  list-style: none;
-  display: flex;
-  justify-content: flex-end;
-  align-items: center;
-}
-nav li{
-  height: 50px;
-}
-.logo{
-  width: 80%;
-}
-nav a{
-  height: 100%;
-  padding: 0 30px;
-  text-decoration: none;
-  display: flex;
-  align-items: center;
-  color: black;
-}
-nav a:hover{
-  background-color: #f0f0f0;
-}
-nav li:first-child{
-  margin-right: auto;
-}
-.sidebar{
-  position: fixed;
-  top: 0; 
-  right: 0;
-  height: 100vh;
-  width: 250px;
-  background-color: rgba(255, 255, 255, 0.603);
-  backdrop-filter: blur(12px);
-  box-shadow: -10px 0 10px rgba(0, 0, 0, 0.1);
-  list-style: none;
-  display: none;
-  flex-direction: column;
-  align-items: flex-start;
-  justify-content: flex-start;
-  z-index: 999;
-}
-.sidebar li{
-  width: 100%;
-}
-.sidebar a{
-  width: 100%;
-}
-.menu-button{
-  display: none;
-}
-@media(max-width: 800px){
-  .hideOnMobile{
-    display: none;
-  }
-  .menu-button{
-    display: block;
-  }
-  
-}
+
 @media(max-width: 400px){
   .sidebar{
     width: 100%;
@@ -169,13 +120,13 @@ nav li:first-child{
 /* - -----------------  notes ------------------*/
 
 .bottm{
-  padding: 20px;
+  padding: 5px;
    
    
 }
 .bottm h2{
    color: #053c86;
-   margin-left: 10px;
+  
    
 }
 .maingrid{
@@ -216,10 +167,298 @@ nav li:first-child{
    background-color: #f5f8ff;
 }
 
+
+/* contact-form */
+.contact{
+  display: flex;
+  flex-direction: column; /* Display as column for smaller screens */
+  align-items: center; /* Center items horizontally */
+  padding: 20px;
+  display: flex;
+  height: 50vh !important;
+  
+ 
+
+
+}
+.cont-form-img{
+  margin-top: 10vh;
+  width: 100px;
+  height: 500px;
+}
+.cont-body{
+background:white;
+width: 50vw;
+height: 90vh;
+
+
+margin-bottom: 4vh;
+margin-top: 10vh;
+
+}
+
+
+
+
+
+
+.contact h1{
+padding-top: 2vh !important;
+/* border: 1px solid black; */
+text-align: center !important;  
+}
+
+.contact form{
+  display: flex !important;
+   flex-direction: column !important;
+  /* border: 2px solid red; */
+  width: 100% !important;
+  height: 55vh !important;
+  justify-content: space-around !important;
+  padding-right: 20px !important;
+}
+
+/* #contf
+{
+
+} */
+#follow{
+  text-align: center !important;
+  margin-top: 20px !important;
+  color: #333 !important;
+}
+.icons{
+  margin-top: 10px !important;
+  text-align: center !important;
+  margin-right: 5px !important;
+}
+.icons a{
+  color: black !important;
+}
+.fa-brands,.fa-regular,.fa-solid {
+  margin-right: 20px !important;
+ 
+}
+#send{
+  background-color: black;
+  color: white;
+  padding: 20px;
+  max-width: fit-content;
+  padding-left: 30px;
+  padding-right: 30px;
+  transition: 0.5s;
+  border: 2px solid black;
+}
+#send:hover{
+  background-color: white;
+  color: black;
+}
+
+/* admissoisn */
+.container-news{
+  background-color: #172554;
+  height: 50vh;
+}
+.text-cont{
+  text-align: center;
+  color: #fff;
+}
+.text-cont h1{
+  font-size: 50px;
+  padding-top: 50px;
+  margin-top: 0px;
+
+}
+
+  
+.p-cont{
+  margin-top: 20px;
+ 
+}
+.p-cont p{
+  font-size: 20px;
+  color: #e4dada;
+}
+
+.button-add{
+  text-align: center;
+}
+
+.btn-added{
+margin-top: 20px;
+display: inline-block;
+text-decoration: none;
+color: #fff;
+
+padding: 10px 31px;
+font-size: 13px;
+background: #C2410C;
+position: relative;
+cursor: pointer;
+
+}
+.btn-added:hover{
+transform: scale(1.1);
+border: 1px solid #C2410C;
+background: transparent;
+transition: 1s;
+}
+.btn{
+  display: inline-block;
+  text-decoration: none;
+  color: #fff;
+  border: 1px solid black;
+  padding: 10px 31px;
+  font-size: 13px;
+  background: transparent;
+  position: relative;
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s, border-color 0.3s;
+}
+.btn:hover{
+  border: 1px solid #172554;
+  background: #172554;
+  
+}
+.po{
+  border: 1px solid #f44336;
+  background: transparent;
+  color: #f44336;
+}
+.po:hover{
+  color: #fff;
+}
+
+
+@media(max-width:700px){
+  
+/* contact-form */
+.contact{
+  display: flex;
+  flex-direction: column; /* Display as column for smaller screens */
+  align-items: center; /* Center items horizontally */
+  padding: 5px;
+  margin-bottom: 20vh;
+ 
+
+}
+.fa-solid{display: none ;}
+#form-img{
+  display: none;
+}
+.cont-body{
+  background: white;
+  width: 90%; /* Adjust width for responsiveness */
+  max-width: 800px; /* Limit maximum width */
+  padding: 5px;
+  margin: auto;
+  margin-top: 20px; /* Add top margin */
+  margin-bottom: 20px; 
+  background:white;
+ 
+}
+
+
+
+
+
+
+.contact h1{
+padding-top: 2vh !important;
+/* border: 1px solid black; */
+text-align: center !important;  
+}
+
+.contact form{
+  display: flex !important;
+   flex-direction: column !important;
+  /* border: 2px solid red; */
+  width: 100% !important;
+  height: 55vh !important;
+
+  padding-right: 5px !important;
+}
+
+/* #contf
+{
+
+} */
+#follow{
+  text-align: center !important;
+  margin-top: 20px !important;
+  color: #333 !important;
+  margin-bottom: 5px;
+}
+.icons{
+  margin-top: 10px !important;
+  text-align: center !important;
+  margin-right: 5px !important;
+}
+.icons a{
+  color: black !important;
+}
+.fa-brands,.fa-regular,.fa-solid {
+  margin-right: 9px !important;
+ 
+}
+
+/* admissoisn */
+.container-news{
+  background-color: #172554;
+  height: 50vh;
+}
+.text-cont{
+  text-align: center;
+  color: #fff;
+}
+.text-cont h1{
+  font-size: 50px;
+  padding-top: 50px;
+  margin-top: 0px;
+
+}
+
+  
+.p-cont{
+  margin-top: 20px;
+ 
+}
+.p-cont p{
+  font-size: 20px;
+  color: #e4dada;
+}
+
+.button-add{
+  text-align: center;
+}
+
+.btn-added{
+margin-top: 20px;
+display: inline-block;
+text-decoration: none;
+color: #fff;
+
+padding: 10px 31px;
+font-size: 13px;
+background: #C2410C;
+position: relative;
+cursor: pointer;
+
+}
+.btn-added:hover{
+transform: scale(1.1);
+border: 1px solid #C2410C;
+background: transparent;
+transition: 1s;
+}
+
+}
+
 /*----------------footer--------------------*/
 
 
 .footer{
+  margin-top: 300px;
   width: 100%;
   position: relative;
   bottom: 0;
